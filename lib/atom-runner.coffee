@@ -79,7 +79,7 @@ class AtomRunner
     if not view?
       view = new AtomRunnerView(editor.getTitle())
       panes = atom.workspace.getPanes()
-      pane = panes[panes.length - 1].splitRight(view)
+      pane = panes[0].splitDown(view)
 
     view.setTitle(editor.getTitle())
     pane.activateItem(view)
